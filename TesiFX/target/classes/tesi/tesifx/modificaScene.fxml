@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tesi.tesifx.modificaController">
+   <left>
+      <VBox alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nameLabel" style="-fx-font-weight: bold;" maxHeight="-Infinity" prefHeight="40.0" textAlignment="JUSTIFY" textFill="#26bfbc" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Button fx:id="lunediButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showLunedi" onMouseEntered="#minimizeLunedi" onMouseExited="#maximizeLunedi" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Lunedi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+            <Button fx:id="martediButton" maxHeight="-Infinity" maxWidth="37.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showMartedi" onMouseEntered="#minimizeMartedi" onMouseExited="#maximizeMartedi" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Martedi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+            <Button fx:id="mercolediButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showMercoledi" onMouseEntered="#minimizeMercoledi" onMouseExited="#maximizeMercoledi" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Mercoledi" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+            <Button fx:id="giovediButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showGiovedi" onMouseEntered="#minimizeGiovedi" onMouseExited="#maximizeGiovedi" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Giovedi" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" />
+            <Button fx:id="venerdiButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showVenerdi" onMouseEntered="#minimizeVenerdi" onMouseExited="#maximizeVenerdi" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Venerdi" textFill="#fffefe">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+            <Button fx:id="sabatoButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showSabato" onMouseEntered="#minimizeSabato" onMouseExited="#maximizeSabato" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Sabato" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+            <Button fx:id="domenicaButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showDomenica" onMouseEntered="#minimizeDomenica" onMouseExited="#maximizeDomenica" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Domenica" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: DIMGREY;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="225.0">
+               <children>
+                  <Button fx:id="backButton3" layoutX="26.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#backPage3" prefHeight="40.0" prefWidth="88.0" style="-fx-background-radius: 20;" text="     " />
+               </children>
+            </Pane>
+            <Label maxWidth="-Infinity" prefWidth="5.0" />
+            <Button fx:id="colazioneButton2" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showColazione" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Colazione" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxWidth="-Infinity" prefHeight="0.0" prefWidth="25.0" />
+            <Button fx:id="pranzoButton2" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showPranzo" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Pranzo" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxWidth="-Infinity" prefWidth="20.0" />
+            <Button fx:id="cenaButton2" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showCena" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Cena" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxWidth="-Infinity" prefWidth="25.0" />
+            <Button fx:id="spuntinoButton2" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showSpuntino" prefWidth="100.0" style="-fx-background-color: DIMGREY;-fx-font-weight: bold;" text="Spuntino" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label maxWidth="-Infinity" prefWidth="128.0" />
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: DIMGREY;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="569.0" style="-fx-background-color: DARKGREY;" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="40.0" />
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="350.0" prefWidth="200.0">
+               <children>
+                  <Label />
+                  <ListView fx:id="listaModifica" prefHeight="269.0" prefWidth="395.0" style="-fx-background-color: LIGHTGREY;" />
+                  <Label />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

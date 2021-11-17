@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.stage.Screen?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.stage.Screen?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#closeTableView" prefHeight="400.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: DIMGREY;" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tesi.tesifx.PrimarySceneController">
+    <children>
+      <Label />
+      <Label />
+      <Label />
+      <Label />
+        <TextField fx:id="searchbar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#dammiTabella" onMouseClicked="#dammiTabella" prefHeight="31.0" prefWidth="319.0" promptText="search" style="-fx-background-radius: 15;" />
+      <HBox maxWidth="-Infinity" prefHeight="200.0" prefWidth="800.0">
+         <children>
+            <Label maxWidth="-Infinity" prefWidth="200.0" />
+            <ListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showMenuItem" prefHeight="200.0" prefWidth="320.0" style="-fx-background-color: DIMGREY;" styleClass="list-view1" visible="false" />
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="modificaButton" layoutX="8.0" layoutY="5.0" minHeight="30" mnemonicParsing="false" onMouseClicked="#modificaPersona" styleClass="buttonItem" text="Aggiorna" visible="false" />
+                  <Button fx:id="rimuoviButton" layoutX="75.0" layoutY="5.0" minHeight="30" mnemonicParsing="false" onMouseClicked="#deletePersona" styleClass="buttonItem2" text="Rimuovi" visible="false" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label text="Aggiungi paziente">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+
+        <Button fx:id="aggiungiButton" alignment="BASELINE_LEFT" onAction="#changePrimaryScene" prefHeight="38.0" prefWidth="176.0" styleClass="buttonItem" text="     Aggiungi" textAlignment="JUSTIFY">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@Images/User_Icon_32.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    </children>
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+    </padding>
+</VBox>

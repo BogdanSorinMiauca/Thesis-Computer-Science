@@ -1,0 +1,91 @@
+.menuItem:hover{
+    -fx-border-color: #660099;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem:hover{
+    -fx-background-color: darkgrey;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+.buttonItem:hover
+{
+-fx-background-color: darkgrey;
+
+    -fx-border-width: 0px 0px 0px 3px;
+}
+.buttonItem2:hover
+{
+-fx-background-color: darkgrey;
+
+    -fx-border-width: 0px 0px 0px 3px;
+}
+.list-view .list-cell:hover {
+    -fx-background-color: chartreuse;
+}
+
+}
+.list-view .list-cell:odd {
+    -fx-background-color: DARKGREY;
+}
+.list-view .list-cell:even {
+    -fx-background-color: DARKGREY;
+}
+.list-view1 .list-cell:odd {
+    -fx-background-color: DIMGREY;
+}
+.list-view1 .list-cell:even {
+    -fx-background-color: DIMGREY;
+}
+.progress-bar > .track {
+  -fx-text-box-border: LIGHTGREY;
+  -fx-control-inner-background: LIGHTGREY;
+}
+.combo-box.center-aligned>.list-cell {
+    -fx-alignment: center;
+}
+.text-area .content {
+ -fx-background-color: DIMGREY;
+
+}
+.text-area{
+-fx-text-fill:  WHITE;
+}
+.text-field1 .content {
+ -fx-control-inner-background:DIMGREY;
+
+}
+.progress-bar2 > .bar {
+    -fx-padding:0;
+    -fx-background-radius:20;
+    -fx-background-insets: 0;
+    -fx-background-color: DARKMAGENTA;
+}
+
+.progress-bar2 > .track {
+   -fx-background-color: lightgray, white;
+   -fx-background-radius:20;
+   -fx-background-insets: 0, 1;
+
+}
+
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: #FAEBD7;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+.axis-tick-mark {
+    -fx-stroke: #A9A9A9;
+    -fx-stroke-width: 3;
+}
+.axis-minor-tick-mark {
+    -fx-stroke: #A9A9A9;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #696969; }
+.chart-series-line {
+    -fx-stroke-width: 2px;
+    -fx-effect: null;
+}

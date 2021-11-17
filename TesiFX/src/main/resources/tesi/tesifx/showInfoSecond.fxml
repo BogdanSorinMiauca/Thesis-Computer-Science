@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: DIMGREY" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tesi.tesifx.infoSecondSceneController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label maxWidth="-Infinity" prefWidth="10.0" />
+            <ProgressBar fx:id="progressProteine" prefHeight="10.0" prefWidth="200.0" progress="0.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="progress-bar2" />
+            <Label fx:id="proteineLabel" text=" Proteine" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label maxHeight="-Infinity" prefWidth="10.0" />
+            <ProgressBar fx:id="progressCarboidrati" prefHeight="10.0" prefWidth="200.0" progress="0.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="progress-bar2" />
+            <Label fx:id="carboidratiLabel" text=" Carboidrati" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" />
+            <ProgressBar fx:id="progressGrassi" prefHeight="10.0" prefWidth="200.0" progress="0.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="progress-bar2" />
+            <Label fx:id="grassiLabel" text=" Grassi" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

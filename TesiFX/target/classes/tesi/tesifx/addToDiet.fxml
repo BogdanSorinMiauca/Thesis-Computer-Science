@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="641.0" prefWidth="700.0" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tesi.tesifx.addToDietController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DARKGREY; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: DIMGREY;" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                        <Label />
+                        <Label />
+                        <ChoiceBox fx:id="choiseBox" maxWidth="-Infinity" onMouseClicked="#changeDay" prefWidth="176.0" />
+                        <Label />
+                                <Button fx:id="colazioneButton" alignment="BASELINE_LEFT" onAction="#openVbox" onMouseClicked="#setValueColazione" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Colazione" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="pranzoButton" alignment="BASELINE_LEFT" onAction="#openVbox" onMouseClicked="#setValuePranzo" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Pranzo" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="cenaButton" alignment="BASELINE_LEFT" onAction="#openVbox" onMouseClicked="#setValueCena" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Cena" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="spuntinoButton" alignment="BASELINE_LEFT" onAction="#openVbox" onMouseClicked="#setValueSpuntino" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Spuntino">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                        <Button fx:id="totaleButton" alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#openVbox" onMouseClicked="#showTotale" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Totale">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/add.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Label />
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="176.0" text="Nota" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="textAreaNota" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DARKGREY;" styleClass="textArea-Nota" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="textFieldNota" maxHeight="30.0" maxWidth="120.0" onAction="#inviaText" />
+                              <Button fx:id="inviaButtonNota" maxHeight="-Infinity" mnemonicParsing="false" onAction="#inviaText" prefHeight="30.0" prefWidth="58.0" text="Invia" />
+                           </children>
+                        </HBox>
+                            </children>
+                        </VBox>
+                  <Button fx:id="backButton2" layoutX="26.0" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#backPage2" prefHeight="40.0" prefWidth="88.0" style="-fx-background-radius: 20;" text="       " />
+                    </children>
+                </AnchorPane>
+            </left>
+         <center>
+            <VBox fx:id="vboxItem" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: DARKGREY;" visible="false" BorderPane.alignment="CENTER">
+               <children>
+                  <Label />
+                  <HBox maxHeight="-Infinity" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="-Infinity" prefWidth="415.0" />
+                        <Label alignment="CENTER" maxWidth="-Infinity" prefWidth="100.0" text="Totale">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <Label fx:id="labelPasto" alignment="CENTER" maxWidth="-Infinity" prefWidth="100.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                        <ProgressBar fx:id="progressBar" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" progress="0.0" style="-fx-background-radius: 15;" />
+                        <Button fx:id="progressButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showInfoSecond" prefHeight="30.0" prefWidth="125.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Label />
+                        <Button fx:id="buttonPasto" layoutX="392.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showInfoSecond" prefHeight="30.0" prefWidth="85.0" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox maxWidth="-Infinity" prefHeight="55.0" prefWidth="800.0">
+                     <children>
+                        <Label maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="450.0" />
+                        <Label maxWidth="-Infinity" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="300.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listaAlimentiAggiunti" onMouseClicked="#rimuoviAlimento" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: DARKGREY;" styleClass="list-view-second" />
+                        <ListView fx:id="quantitaView" prefHeight="300.0" prefWidth="100.0" style="-fx-background-color: DARKGREY;" styleClass="list-view-second" />
+                        <Label prefWidth="100.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label maxHeight="5.0" minHeight="5.0" prefHeight="5.0" />
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label maxWidth="-Infinity" prefWidth="13.0" />
+                                    <Button fx:id="salvaButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#salvaDieta" prefHeight="35.0" prefWidth="65.0" styleClass="buttonItem" text="Salva" visible="false" />
+                                    <Label maxWidth="-Infinity" prefWidth="20.0" />
+                                    <Button fx:id="fineButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#tornaMenu" prefHeight="35.0" prefWidth="65.0" styleClass="buttonItem2" text="Fine" visible="false" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="200.0">
+                     <children>
+                        <Label maxWidth="-Infinity" prefHeight="0.0" prefWidth="50.0" />
+                        <Button fx:id="stampaButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#stampaPDF" prefHeight="35.0" prefWidth="100.0" text="Stampa" visible="false">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" />
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label maxHeight="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+                        <TextField fx:id="cercaAlimenti" maxHeight="-Infinity" maxWidth="-Infinity" onKeyTyped="#showAlimenti" onMouseClicked="#showAlimenti" prefHeight="30.0" prefWidth="300.0" promptText="Seleziona alimenti" style="-fx-background-radius: 15;" />
+                        <Label maxWidth="-Infinity" prefWidth="10.0" />
+                        <Button fx:id="aggiungiButton2" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#aggiungiAlimento" prefHeight="38.0" prefWidth="100.0" styleClass="buttonItem" text="Aggiungi" visible="false" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="alimentiLabel" text="Alimenti" visible="false" />
+                  <ListView fx:id="listaAlimenti" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#showAggiungiButton" prefHeight="230.0" prefWidth="300.0" style="-fx-background-color:DARKGREY" visible="false" />
+               </children>
+            </VBox>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

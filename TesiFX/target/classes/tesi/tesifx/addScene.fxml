@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="600.0" style="-fx-background-color: DIMGREY;" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tesi.tesifx.addSceneController">
+   <children>
+      <Label maxHeight="-Infinity" prefHeight="27.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label maxWidth="-Infinity" prefWidth="25.0" />
+            <Button fx:id="backButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#backPage" prefHeight="40.0" prefWidth="88.0" style="-fx-background-radius: 20;" text="       " />
+            <Label maxWidth="-Infinity" prefWidth="400.0" />
+            <Button fx:id="infoDieta" maxHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#showInfoDieta" prefHeight="40.0" prefWidth="100.0" text="Info dieta" visible="false" />
+         </children>
+      </HBox>
+      <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" />
+      <TextField fx:id="nome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#pulisciNome" prefHeight="30.0" prefWidth="300.0" text="Nome" />
+      <Label />
+      <TextField fx:id="cognome" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#pulisciCognome" prefHeight="30.0" prefWidth="300.0" text="Cognome" />
+      <Label />
+      <TextField fx:id="altezza" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#pulisciAltezza" prefHeight="30.0" prefWidth="300.0" text="Altezza" />
+      <Label />
+      <TextField fx:id="peso" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#pulisciPeso" prefHeight="30.0" prefWidth="300.0" text="Peso" />
+      <Label />
+      <TextField fx:id="eta" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#pulisciEta" prefHeight="30.0" prefWidth="300.0" text="Eta" />
+      <Label />
+      <ComboBox fx:id="comboAllenamento" maxWidth="-Infinity" prefWidth="300.0" promptText="Allenamento" visibleRowCount="4" />
+      <Label />
+      <ComboBox fx:id="comboObiettivo" maxHeight="-Infinity" prefWidth="300.0" promptText="Obiettivo" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="femmina" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#genereFemmina" prefHeight="31.0" prefWidth="135.0" style="-fx-background-radius: 15;" text="Femmina" />
+            <Label maxWidth="20.0" prefWidth="20.0" />
+            <Button fx:id="maschio" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#genereMaschio" prefHeight="31.0" prefWidth="135.0" style="-fx-background-radius: 15;" text="Maschio" />
+         </children>
+      </HBox>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="avantiButton" alignment="BASELINE_LEFT" onAction="#changeAddScene" prefHeight="38.0" prefWidth="176.0" styleClass="buttonItem" text="     Aggiungi" textAlignment="JUSTIFY" textFill="#1e0c0c">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/data.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </StackPane>
+   </children>
+</VBox>
